@@ -1,0 +1,296 @@
+body {
+  line-height: 1.7em;
+  color: #FF2E63;
+  font-size: 13px;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+    color: #34495e;
+}
+
+.pure-img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.l-box {
+   padding: 1em;
+}
+
+.l-box-lrg {
+  padding: 2em;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.is-center {
+  text-align: center;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0; 
+  background: #252A34;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 3;
+  opacity: 0.7;
+  transition: all 1s ease-in-out;
+ }
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+  text-transform: uppercase;
+  font-family: calibri;
+  letter-spacing: 1px;
+}
+
+.navigation:hover {
+  opacity: 1;
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+
+  
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+.container {
+    background: #FF2E63;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 88%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+
+.splash {
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    position: absolute;
+    top: 100px; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.head {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border: 3px solid white;
+  padding: 1em 1.6em;
+  font-weight: 100;
+  border-radius: 5px;
+  line-height: 1em;
+}
+
+.subhead {
+  color: white;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+}
+
+.content-wrapper {
+  position: absolute;
+  top: 95%;
+  width: 100%;
+  min-height: 12%;
+  z-index: 2;
+  background: white;
+}
+
+.content {
+  text-align: center;
+}
+
+article {
+  width: 400px;
+  height: auto;
+  display: inline-block;
+  align-self: auto;
+  margin: 10px;
+  padding: 5px;
+  text-align: left;
+  margin-top: 0;
+}
+
+p {
+  font-family: calibri;
+  font-size: 15px;
+  margin: 10px;
+}
+
+.color {
+  color: #252A34;
+
+}
+
+h3 a {
+  text-decoration: none;
+  color: #252A34;
+}
+
+.content-head {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 2em 0 1em;
+}
+
+.content-head-ribbon {
+  color: white;
+}
+
+.content-subhead {
+  color: #FF2E63;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 17px;
+  font-family: calibri;
+}
+  .content-subhead i {
+     margin-right: 7px;
+  }
+
+.ribbon {
+  background: #252A34;
+  color: #EAEAEA;
+  height: 700px;
+}
+
+.dark {
+  width: 600px;
+}
+
+.desc {
+  color: #252A34;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 15px;
+  font-family: calibri
+}
+
+/*
+ * -- TABLET (AND UP) MEDIA QUERIES --
+ */
+
+@media (min-width: 48em) {
+
+    body {
+        font-size: 16px;
+    }
+
+
+    .home-menu {
+        text-align: left;
+    }
+        .home-menu ul {
+            float: right;
+        }
+
+    .splash {
+        width: 50%;
+        height: 50%;
+    }
+
+    .head {
+        font-size: 250%;
+    }
+
+    .l-box-lrg {
+        border: none;
+    }
+
+}
+
+/*
+ * -- DESKTOP (AND UP) MEDIA QUERIES --
+ */
+@media (min-width: 78em) {
+    .head {
+        font-size: 300%;
+    }
+}
+
+div.img {
+    border: 1px solid #ccc;
+    margin: 20px;
+    transition:all 0.3s ease;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+    transform: scale(1.2);
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    } 
+
+    .ribbon {
+      height: auto;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
